@@ -1,0 +1,19 @@
+columnSuffix: vreebivb
+contentColumnType: text
+fieldGroup: 628725c0-4b0e-4e0e-9832-8075bbbb283b # Partner
+handle: partnerphone
+instructions: null
+name: 'Partner Phone'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

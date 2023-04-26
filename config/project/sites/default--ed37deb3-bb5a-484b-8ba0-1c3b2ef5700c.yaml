@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: acg4
+primary: true
+siteGroup: 358d73b9-2024-4237-a556-ca1b8daf522b # acg4
+sortOrder: 1

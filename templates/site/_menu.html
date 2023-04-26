@@ -1,0 +1,6 @@
+{% set req = "first request segment"  %}
+<li {% if req == "" %} class="active"{% endif %}><a href="{{ siteUrl }}">Home</a></li>
+<li {% if req == "services" %} class="active"{% endif %}><a href="/services">Services</a></li>
+<li {% if req == "ordering" %} class="active"{% endif %}><a href="/ordering">Ordering</a></li>
+<li {% if req == "partners" or req == "partner-detail" %} class="active"{% endif %}><a href="/partners">Partners</a></li>
+<li {% if req == "staff" %} class="active"{% endif %}><a href="/staff">Staff</a></li>

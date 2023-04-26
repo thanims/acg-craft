@@ -1,0 +1,55 @@
+fieldLayouts:
+  4762672e-f9ed-4c84-8261-395b6271f00c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c7e179b1-0a83-45c4-8f68-68a9a45d106a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: da8c8762-f477-4284-b50f-c57192c7462f # Body
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 087659d9-8b7d-4b2e-887e-6bf2193b6834
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a5e66031-6348-47cf-98e8-5af6aa573561
+        userCondition: null
+handle: staffWelcome
+hasTitleField: false
+name: 'Staff Welcome'
+section: 0af2f9e9-f74f-4d8c-abe4-d77cf94a5d6f # Staff Welcome
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

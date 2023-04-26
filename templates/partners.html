@@ -1,0 +1,59 @@
+{% extends "_layout" %}
+
+{% block content %}
+
+  <div class="standard-page">
+
+    <div class="standard-header">
+      <h2>Partners</h2>
+      <div class="standard-image" style="background-image: url(/images/banners/partners.jpg)"></div>
+    </div>
+
+    <div class="standard-welcome">
+      {% set interior = craft.entries.section('partnerWelcome') %}
+      {% for page in interior %}
+        <h3>{{page.title}}</h3>
+        <div class="standard-welcome-description">
+          {{page.body}}
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+
+  <div class="partner-listing">
+    {% set partnerImage = {
+      width: 350,
+      height: 500,
+      crop: 'center-center',
+      quality: 80,
+    } %}
+    {% set partners = craft.entries.section('partners') %}
+    {% for partner in partners %}
+    <div class="partner-entry">
+      <a href="{{partner.url()}}">
+        <div class="partner-image">
+        </div>
+        <div class="partner-name">
+          {{partner.title}}
+        </div>
+
+        <div class="partner-contact">
+          <a href="mailto:{{partner.partnerphone}}">{{partner.partnerphone}}</a>
+        </div>
+        <div class="partner-contact">
+          {% set name = partner.title | split(' ') %}
+          <a href="mailto:{{partner.partneremail}}">Email {{name[0]}}</a>
+        </div>
+
+        <div class="partner-specialties">
+          {% for block in partner.partnerSpecialtyList.all() %}
+            <span>{{block.specialtyName}}</span>{% if not loop.last %}, {% endif %}
+          {% endfor %}
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+
+{% endblock %}

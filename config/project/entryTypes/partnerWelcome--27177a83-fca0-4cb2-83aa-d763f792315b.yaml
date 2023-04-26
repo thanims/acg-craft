@@ -1,0 +1,55 @@
+fieldLayouts:
+  1d50f199-139f-45a5-9908-ea25244a2d17:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 833c66ed-93fa-421a-90f4-0d38e9077a5b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: da8c8762-f477-4284-b50f-c57192c7462f # Body
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 39a6e5ae-6430-4bd2-8061-88802686378d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 5f09873c-1f6c-4c2f-b05f-22bb9c2f24aa
+        userCondition: null
+handle: partnerWelcome
+hasTitleField: false
+name: 'Partner Welcome'
+section: b44a80f1-64fb-4a4c-a6b7-782568e1cfb6 # Partner Welcome
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

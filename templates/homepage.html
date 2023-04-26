@@ -1,0 +1,39 @@
+{% extends "_layout" %}
+
+{% block content %}
+
+  {% set homepage = craft.entries.section('homepage') %}
+  {% for page in homepage %}
+
+    <div class="standard-page">
+      <div class="standard-header">
+        <h2>Welcome</h2>
+        <div class="standard-image" style="background-image: url(/images/banners/home.jpg)"></div>
+      </div>
+    </div>
+
+    <div id="welcome-content">
+      <h2>{{page.title}}</h2>
+      <div class="welcome-content-container">
+        {{page.body}}
+      </div>
+      {% endfor %}
+
+
+      <h3>Recently at ACG</h3>
+      <div class="news-blocks">
+      {% set news = craft.entries.section('news').limit(2) %}
+      {% for entry in news %}
+        <div class="news-block">
+          <h4>{{entry.title}}</h4>
+          <div class="news-description">
+            {{entry.body}}
+          </div>
+        </div>
+      {% endfor %}
+      </div>
+
+    </div>
+
+
+{% endblock %}

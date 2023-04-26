@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: staffWelcome
+name: 'Staff Welcome'
+propagationMethod: all
+siteSettings:
+  ed37deb3-bb5a-484b-8ba0-1c3b2ef5700c: # acg4
+    enabledByDefault: true
+    hasUrls: true
+    template: staff-welcome/_entry
+    uriFormat: staff-welcome
+type: single

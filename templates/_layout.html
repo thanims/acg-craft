@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+	<meta charset="utf-8" />
+	<title>{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}</title>
+	<link rel="home" href="{{ siteUrl }}" />
+
+	<link rel="stylesheet" href="/css/main.css" type="text/css">
+
+	<script src="/js/plugins.js"></script>
+	<script src="/js/main.js"></script>
+
+
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body id="{% if craft.app.request.getSegment(1) %}{{craft.app.request.getSegment(1)}}{% else %}home{% endif %}" >
+
+	<div id="faux-container"></div>
+	<div class="container" id="main-container">
+
+		<!-- Header -->
+		{% include "site/_header.html" %}
+
+		<!-- Inherited Main Content -->
+		<main id="content" role="main">
+			<div class="sidebar">
+				<h3>Office Contact</h3>
+
+				<div class="sidebar-block">
+					<h5>Portland Office</h5>
+					<div class="sidebar-break">{{contactInformation.portlandAddress}}</div>
+					<a href="tel:{{ contactInformation.phone|replace({ ' ':'', '(':'', ')':'', '-':'' }) }}">{{contactInformation.phone}}</a>
+				</div>
+
+				<div class="sidebar-block">
+					<h5>Vancouver Office</h5>
+					<div class="sidebar-break">{{contactInformation.vancouverAddress}}</div>
+					<a href="tel:{{ contactInformation.vancouverPhone|replace({ ' ':'', '(':'', ')':'', '-':'' }) }}">{{contactInformation.vancouverPhone}}</a>
+				</div>
+
+				<div class="sidebar-block">
+					<h5>Office Email</h5>
+					<a href="mailto:{{contactInformation.emailAddress}}">{{contactInformation.emailAddress}}</a>
+				</div>
+
+				<div class="sidebar-block">
+					<h5>Office Fax</h5>
+					<a href="tel:{{ contactInformation.fax|replace({ ' ':'', '(':'', ')':'', '-':'' }) }}">{{contactInformation.fax}}</a>
+				</div>
+
+			</div>
+			{% block content %}
+
+			{% endblock %}
+		</main>
+
+	</div>
+
+	<!-- Footer -->
+	{% include "site/_footer.html" %}
+
+	<!--Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121632057-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-121632057-1');
+	</script>
+
+</body>
+</html>

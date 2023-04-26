@@ -1,0 +1,19 @@
+columnSuffix: cucenslb
+contentColumnType: text
+fieldGroup: eee713d3-b3ed-454c-a580-a6176331f333 # Staff
+handle: staffEmail
+instructions: null
+name: 'Staff Email'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

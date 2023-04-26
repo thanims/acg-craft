@@ -1,0 +1,61 @@
+{% extends "_layout" %}
+
+{% block content %}
+
+  <div class="standard-page">
+
+    <div class="standard-header">
+      <h2>Staff</h2>
+      <div class="standard-image" style="background-image: url(/images/banners/staff.jpg)"></div>
+    </div>
+
+    <div class="standard-welcome">
+      {% set interior = craft.entries.section('staffWelcome') %}
+      {% for page in interior %}
+        <h3>{{page.title}}</h3>
+        <div class="standard-welcome-description">
+          {{page.body}}
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+
+  <div class="partner-listing">
+    {% set partnerImage = {
+      width: 140,
+      height: 200,
+      crop: 'center-center',
+      quality: 80,
+    } %}
+    {% set staffMembers = craft.entries.section('staff') %}
+    {% for staff in staffMembers %}
+    <div class="partner-entry">
+      <div class="partner-image">
+        <img src="{{staff.staffImage.one().getUrl(partnerImage)}}" title="{{staff.title}}" alt="{{staff.title}}">
+      </div>
+      <div class="partner-name">
+        {{staff.title}}
+      </div>
+
+      {% if staff.staffPhone is defined %}
+        <div class="partner-contact">
+          <a href="mailto:{{staff.staffPhone}}">{{staff.staffPhone}}</a>
+        </div>
+      {% endif %}
+      {% if staff.staffEmail is defined %}
+        <div class="partner-contact">
+          {% set name = staff.title | split(' ') %}
+          <a href="mailto:{{staff.staffEmail}}">Email {{name[0]}}</a>
+        </div>
+      {% endif %}
+      {% if staff.staffVcard is defined %}
+        <div class="partner-contact">
+          <a href="{{staff.staffVcard.one().getUrl()}}">Download VCard</a>
+        </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+
+{% endblock %}

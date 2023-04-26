@@ -1,0 +1,115 @@
+fieldLayouts:
+  181b2cb9-2f51-4b6e-8d4d-a79d7adf4e38:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: a2e075b7-f294-4798-b2bd-d311f4426293
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c580f25e-3ae8-41bf-a436-07bd7a51cc66 # Staff Position
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9335caf7-d6cd-4c45-8b95-4327612f53eb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 858afc3f-589f-4bc1-8392-46cf5a5a7fa8 # Staff Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d58efed1-9d6f-4755-8945-7402d270e0bd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 82b51c53-273e-4e1c-88ba-a4ed4e4354f9 # Staff Email
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a8f57b03-64e7-4b86-83c0-bde251170a45
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 90641f7b-acb7-469e-801d-f07d2e6fe963 # Staff Phone
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 63b65a18-8a80-49c1-adc4-e4e89c4db154
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ec184479-d003-4a71-b663-2225c5efce07 # Staff Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bfa5f7b7-fb5c-4124-bb91-adf6bee577a8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3acce9d6-4376-48ea-a939-e76b99bd430f # Staff VCard
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 40ebf7ab-5919-4e1b-bf7e-03b752c2cdc0
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 0b5a4c2c-f288-4cdb-8374-ad34ba081718
+        userCondition: null
+handle: staff
+hasTitleField: true
+name: Staff
+section: 5032884a-b8bb-462b-83bf-9187eefd5989 # Staff
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

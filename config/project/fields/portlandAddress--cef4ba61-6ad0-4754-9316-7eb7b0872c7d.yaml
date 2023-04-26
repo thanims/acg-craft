@@ -1,0 +1,19 @@
+columnSuffix: qjzccruw
+contentColumnType: text
+fieldGroup: c076d11d-e684-47f3-ba8a-392b06089feb # Contact Information
+handle: portlandAddress
+instructions: 'Address for office in Portland'
+name: 'Portland Address'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 2
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,27 @@
+columnSuffix: txtyricf
+contentColumnType: text
+fieldGroup: 628725c0-4b0e-4e0e-9832-8075bbbb283b # Partner
+handle: partnerBio
+instructions: null
+name: 'Partner Bio'
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: ''
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

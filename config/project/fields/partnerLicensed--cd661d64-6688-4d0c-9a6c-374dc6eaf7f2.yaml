@@ -1,0 +1,23 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 628725c0-4b0e-4e0e-9832-8075bbbb283b # Partner
+handle: partnerLicensed
+instructions: null
+name: 'Partner Licensed'
+searchable: true
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showSiteMenu: true
+  source: 'taggroup:78456f04-9d37-4bd9-9ecc-00711c6ffd7f' # Partner Licensed
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Tags

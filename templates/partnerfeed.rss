@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ siteName }}</title>
+    <link>{{ siteUrl }}</link>
+    <atom:link href="{{ url(craft.app.request.path) }}" rel="self" type="application/rss+xml" />
+    <description>Export feed only</description>
+    <language>en-us</language>
+    <pubDate>{{ now.rss }}</pubDate>
+    <lastBuildDate>{{ now.rss }}</lastBuildDate>
+
+    {% for entry in craft.entries.section('partners').find() %}
+      <item>
+        <title>{{ entry.title }}</title>
+        <link>{{ entry.url }}</link>
+        <pubDate>{{ entry.postDate.rss }}</pubDate>
+        <author>{{ entry.author }}</author>
+        <guid>{{ entry.url }}</guid>
+        <email>{{ entry.partneremail }}</email>
+        <phone>{{ entry.partnerphone }}</phone>
+        <bio><![CDATA[
+          {{ entry.partnerBio }}
+        ]]></bio>
+          <fact><![CDATA[
+          {{ entry.partnerFact }}
+        ]]></fact>
+        <quote><![CDATA[
+          {{ entry.partnerQuote }}
+        ]]></quote>
+                <specialty><![CDATA[
+          {{ entry.partnerSpecialty }}
+        ]]></specialty>
+          {% for block in entry.partnerSpecialityList %}
+            <specialtag>{{block.specialtyName}}</specialtag>{% if not loop.last %}, {% endif %}
+          {% endfor %}
+        {% for tag in entry.partnerLicensed %}
+          <licensed>{{tag.title}}</licensed>{% if not loop.last %},{% endif %}
+        {% endfor %}
+      </item>
+    {% endfor %}
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+columnSuffix: zbhlgdwg
+contentColumnType: text
+fieldGroup: c076d11d-e684-47f3-ba8a-392b06089feb # Contact Information
+handle: vancouverPhone
+instructions: 'Phone Number for Office in Vancouver'
+name: 'Vancouver Phone'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

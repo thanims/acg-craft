@@ -1,0 +1,42 @@
+{% extends "_layout" %}
+
+{% block content %}
+
+  <div class="standard-page">
+    <div class="standard-header">
+      <h2>Research</h2>
+      <div class="standard-image" style="background-image: url(/images/banners/bridge.jpg)"></div>
+    </div>
+
+    <div class="standard-welcome">
+      <h3>Knowledge is power</h3>
+      <div class="standard-welcome-description">
+        <p>We work hard to understand the local market and are more than happy to share information.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="research-listing">
+
+    <div class="research-list newsletter-list">
+      <h3>Newsletters</h3>
+      <ul>
+      {% set newsletters = craft.entries.section('newsletters').limit(8) %}
+      {% for pdf in newsletters %}
+        <li><a href="{{pdf.pdf.one().getUrl()}}" target="_blank">{{ pdf.title }}</a></li>
+      {% endfor %}
+      </ul>
+    </div>
+    <div class="research-list newsletter-list">
+      <h3>Case Studies & Specialty Brochures</h3>
+      <ul>
+      {% set newsletters = craft.entries.section('studiesAndBrochures').limit(8) %}
+      {% for pdf in newsletters %}
+        <li><a href="{{pdf.pdf.one().getUrl()}}" target="_blank">{{ pdf.title }}</a></li>
+      {% endfor %}
+      </ul>
+    </div>
+
+  </div>
+
+{% endblock %}

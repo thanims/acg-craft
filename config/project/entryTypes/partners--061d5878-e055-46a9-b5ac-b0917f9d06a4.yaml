@@ -1,0 +1,175 @@
+fieldLayouts:
+  5f742870-9522-40b4-b580-34f8888333d3:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 99bfe5fb-0102-4761-86be-6cae14ff1994
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9966d4c3-a3e7-4372-ab25-8600b447f1dc # Partner Phone
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 52e019ea-036d-440a-9852-d1005c8bc705
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bd405d98-83b5-4f88-8d16-420e1b2100ae # Partner Email
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bc7b42aa-f634-4412-81de-20ce4d79237f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8b507e6e-1d6b-46f7-8ac4-9d562449d07b # Partner Bio
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9051f44c-aca8-417a-bc38-bb7744a41cf2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a635c7ad-d264-4201-b831-e6ed0cb360ca # Partner Specialty
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7849b3eb-9240-4d18-a41a-47dab1cb4c19
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 418f3697-221d-44f7-86aa-e1aae1bdf009 # Partner Quote
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 85bcc913-e71e-49f7-8054-906e07bd8119
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 200e5079-919e-490e-b482-9970a23bda96 # Partner Fact
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 18ef59fb-a8b5-4ed4-87de-4240f539f877
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: adb98c27-10eb-4394-88e5-abba27a99f47 # Partner Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 542075f4-1d6f-48fc-97a2-7123a9337358
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 376b25cd-1938-49a2-a15e-d9d957437672 # Partner Resume
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b56a84dc-83f5-4659-8c48-7c02879f5ac1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ac45bdd7-6cd3-4b8d-9915-38c899a89d0f # Partner VCard
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6280a614-01cf-46ef-b366-aa123c09c85e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: cd661d64-6688-4d0c-9a6c-374dc6eaf7f2 # Partner Licensed
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7c229b5d-e9e6-4705-8f8a-bb242b479ea2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 61c770c0-be33-458a-9755-01f2673b610f # Partner Specialty List
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: efc637e5-d2c1-45e6-ab58-94a9c76537b7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 22bb020b-cdfd-4198-84c8-de999f2d39aa
+        userCondition: null
+handle: partners
+hasTitleField: true
+name: Partners
+section: b761f4f5-8b2e-49b4-a300-6cf554e2b8c9 # Partners
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 628725c0-4b0e-4e0e-9832-8075bbbb283b # Partner
+handle: partnerSpecialtyList
+instructions: 'Bullet points for property specialties that appear on partner overview page'
+name: 'Partner Specialty List'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_partnerspecialtylist}}'
+  maxBlocks: 3
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

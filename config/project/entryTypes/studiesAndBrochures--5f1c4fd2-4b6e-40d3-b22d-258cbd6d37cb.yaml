@@ -1,0 +1,55 @@
+fieldLayouts:
+  e1e7461c-0598-42f3-b5e8-9aa42afceb42:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: b864e3fd-dcfb-4a61-ade0-ca2242bc1ca4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7abd9a77-cd01-44a5-96e0-4f438da28677 # PDF
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a84ef4e1-60b1-4ff6-af4b-920f36d3e6a3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Newsletters
+        uid: 5373a60a-4b7a-4514-9264-371eb3f2928b
+        userCondition: null
+handle: studiesAndBrochures
+hasTitleField: true
+name: 'Studies and Brochures'
+section: fde35769-e37b-4e8e-b50f-31b847418db0 # Studies and Brochures
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

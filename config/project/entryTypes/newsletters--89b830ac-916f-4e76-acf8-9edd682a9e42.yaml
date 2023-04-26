@@ -1,0 +1,55 @@
+fieldLayouts:
+  a26ec680-7d5a-4fcf-a3c7-4fcfc43df9dd:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: __blank__
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: b3c49117-ae3d-4ad8-9ab7-f7f676ef6e85
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7abd9a77-cd01-44a5-96e0-4f438da28677 # PDF
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4cc9c224-8eb6-49bc-9e94-8b850b96cabb
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: ba6fcc50-7295-489b-ac16-e2c28bc54388
+        userCondition: null
+handle: newsletters
+hasTitleField: true
+name: Newsletters
+section: 5b7c7a88-3b97-467a-a390-560ffe763e8c # Newsletters
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

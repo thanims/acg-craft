@@ -1,0 +1,96 @@
+fieldLayouts:
+  59a3cd53-bacc-41b4-bab5-fc1e7905b2c5:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: cef4ba61-6ad0-4754-9316-7eb7b0872c7d # Portland Address
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 86a9706a-18ff-4cf0-89c4-0e946f84b173
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0066b7be-5f43-409c-b1d7-2f007ff99d77 # Portland Phone
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 55f4b4c8-5b35-42f8-8921-369973beb2e2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3afa5ad4-c705-4ca4-a7d2-dd61d18cd645 # Vancouver Address
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3f6396c8-ae85-4c04-9936-3b2e85d69b73
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e3dcb2ef-4c57-45dd-88bf-c58e1a1716f1 # Vancouver Phone
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 40993be2-6d2c-4aa5-a238-2b55b9a61709
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f30defda-df53-4b02-8ac9-b5e25a0c7b8d # General Email Address
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c505471a-2476-47f1-a363-878542e2784b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bc555b8c-74a6-4a85-9765-22b3cccb907f # General Phone Number
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fe681ca6-a132-48ce-b985-aff62c225088
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5462bd0e-b127-475f-8561-942ac2838f06 # General Fax Number
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bb204457-bd93-4eb7-a117-59ca8b01ac6f
+            userCondition: null
+            warning: null
+            width: 100
+        name: fields
+        uid: 2a3dc83c-5892-4f16-ae48-4466a13a252e
+        userCondition: null
+handle: contactInformation
+name: 'Contact Information'
+sortOrder: 1

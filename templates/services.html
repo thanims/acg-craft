@@ -1,0 +1,56 @@
+{% extends "_layout" %}
+
+{% block content %}
+
+  <div class="standard-page">
+    <div class="standard-header">
+      <h2>Services</h2>
+      <div class="standard-image" style="background-image: url(/images/banners/welcome.jpg)"></div>
+    </div>
+
+    <div class="standard-welcome">
+      <h3>Unparalleled Support</h3>
+      <div class="standard-welcome-description">
+        <div class="service-text">
+          <p>We provide a broad range of services throughout both Oregon and Washington.</p>
+          <p><a href="mailto:{{contactInformation.emailAddress}}">Contact us</a> anytime if we can be of service in Oregon or Washington.</p>
+        </div>
+
+        {% set serviceImageThumbCrop = {
+          width: 300,
+          mode: 'crop',
+          position: 'center-center',
+          quality: 80,
+        } %}
+
+        {% set image = craft.assets()
+          .id(173)
+          .one() %}
+        {% set imageUrl = image ? image.getUrl() : url('/images/service_map.jpg') %}
+        {% set imageThumbUrl = image ? image.getUrl(serviceImageThumbCrop) : url('/images/service_map.jpg') %}
+        <div class="service-map">
+          <a href="#" data-featherlight="{{imageUrl}}">
+            <img src="{{imageThumbUrl}}" title="Service Area" alt="Service Area">
+            <span>Click to see entire service area</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-listing">
+    {% set categories = craft.categories.group('services').level(1) %}
+    {% for category in categories %}
+      <div class="service-list">
+        <h3>{{ category.title }}</h3>
+        {% set children = category.getChildren() %}
+        <ul>
+          {% for subcategory in children %}
+            <li>{{subcategory.title}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+
+{% endblock %}

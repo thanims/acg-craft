@@ -1,0 +1,19 @@
+columnSuffix: eccgzipr
+contentColumnType: text
+fieldGroup: eee713d3-b3ed-454c-a580-a6176331f333 # Staff
+handle: staffDescription
+instructions: null
+name: 'Staff Description'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 2
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

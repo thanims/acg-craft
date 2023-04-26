@@ -1,0 +1,93 @@
+{% extends "_layout" %}
+
+{% block content %}
+{% set interior = craft.entries.section('partners').slug(craft.app.request.lastSegment) %}
+
+  <div class="standard-page">
+
+    <div class="standard-header standard-header-small">
+      <h2>Partners</h2>
+      <div class="standard-image">
+        <img src="/images/banners/partners.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="return-to-members">
+      <a href="/partners">« Return to Team Listing</a>
+    </div>
+
+  </div>
+
+  {% for partner in interior %}
+  <div class="partner-detail">
+    {% set partnerImage = {
+      width: 800,
+      height: 1140,
+      crop: 'center-center',
+      quality: 80,
+    } %}
+    <div class="partner-right">
+      <div class="partner-image">
+        <img src="{{partner.partnerImage.one().getUrl(partnerImage)}}" title="{{partner.title}}" alt="{{partner.title}}">
+      </div>
+      <div class="partner-contact">
+        <span>Telephone</span>
+        <a href="mailto:{{partner.partnerphone}}">{{partner.partnerphone}}</a>
+      </div>
+      <div class="partner-contact">
+        <span>Email</span>
+        <a href="mailto:{{partner.partneremail}}">{{partner.partneremail}}</a>
+      </div>
+      {% if partner.partnerResume is defined %}
+      <div class="partner-contact">
+        <span>Resume</span>
+        <a target="_blank" href="{{partner.partnerResume.one().getUrl()}}">View Resume</a>
+      </div>
+      {% endif %}
+      {% if partner.partnerVcard is defined %}
+      <div class="partner-contact">
+        <span>VCard</span>
+        <a href="{{partner.partnerVcard.one().getUrl()}}">Download VCard</a>
+      </div>
+      {% endif %}
+      <div class="partner-contact">
+        <span>States Licensed</span>
+        {% for tag in partner.partnerLicensed %}
+          {{tag.title}}{% if not loop.last %},{% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <h3>
+      <span>{{partner.title}}</span>
+      {% if "MAI" in partner.title %}<div class="mai-badge"></div>{% endif %}
+    </h3>
+    <div class="partner-text-block">
+      <h4>Bio</h4>
+      <div>{{partner.partnerBio}}</div>
+    </div>
+
+    {% if partner.partnerSpecialty %}
+    <div class="partner-text-block">
+      <h4>Speciality</h4>
+      <div>{{partner.partnerSpecialty}}</div>
+    </div>
+    {% endif %}
+    {% if partner.partnerQuote %}
+    <div class="partner-text-block partnerQuoute">
+      <h4>Favorite Quote</h4>
+      <div>{{partner.partnerQuote}}</div>
+    </div>
+    {% endif %}
+    {% if partner.partnerFact %}
+    <div class="partner-text-block">
+      <h4>Fun Fact</h4>
+      <div>{{partner.partnerFact}}</div>
+    </div>
+    {% endif %}
+
+  </div>
+
+  {% endfor %}
+
+{% endblock %}

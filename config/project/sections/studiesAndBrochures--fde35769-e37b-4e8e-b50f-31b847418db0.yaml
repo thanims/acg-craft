@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: studiesAndBrochures
+name: 'Studies and Brochures'
+propagationMethod: all
+siteSettings:
+  ed37deb3-bb5a-484b-8ba0-1c3b2ef5700c: # acg4
+    enabledByDefault: true
+    hasUrls: true
+    template: studies-and-brochures/_entry
+    uriFormat: 'studies-and-brochures/{slug}'
+structure:
+  maxLevels: null
+  uid: 1a63721c-8151-4e8e-aeda-01b0182e99a2
+type: structure

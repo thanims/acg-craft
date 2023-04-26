@@ -1,0 +1,105 @@
+dateModified: 1682539863
+email:
+  fromEmail: nimdaghlian@gmail.com
+  fromName: acg4
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  assets:
+    hasUrls: true
+    name: Assets
+    settings:
+      path: assets
+    type: craft\fs\Local
+    url: assets
+  images:
+    hasUrls: true
+    name: Images
+    settings:
+      path: images
+    type: craft\fs\Local
+    url: images
+meta:
+  __names__:
+    0af2f9e9-f74f-4d8c-abe4-d77cf94a5d6f: 'Staff Welcome' # Staff Welcome
+    1db850a0-f6ad-4f49-a8c9-3798cdc85237: 'Staff Welcome' # Staff Welcome
+    1ffeda5c-e799-4f16-8cb6-cab4a42a654f: News # News
+    3acce9d6-4376-48ea-a939-e76b99bd430f: 'Staff VCard' # Staff VCard
+    3afa5ad4-c705-4ca4-a7d2-dd61d18cd645: 'Vancouver Address' # Vancouver Address
+    4f325ae8-4121-424c-9445-7ea01a0e8512: News # News
+    5b7c7a88-3b97-467a-a390-560ffe763e8c: Newsletters # Newsletters
+    5f1c4fd2-4b6e-40d3-b22d-258cbd6d37cb: 'Studies and Brochures' # Studies and Brochures
+    7abd9a77-cd01-44a5-96e0-4f438da28677: PDF # PDF
+    8b507e6e-1d6b-46f7-8ac4-9d562449d07b: 'Partner Bio' # Partner Bio
+    8babef65-1bf0-47ed-9eb4-fc447536b378: Homepage # Homepage
+    20eea475-8129-473a-9b91-9f7fdf7f0f28: Services # Services
+    25b704fe-c645-4633-91d3-61793c53eadd: Homepage # Homepage
+    49c315af-36ac-41fe-94e0-fd2395b182e1: 'Partner Designated Member' # Partner Designated Member
+    58c8b344-ea3b-4547-93ab-073eb51444f4: Newsletters # Newsletters
+    61c770c0-be33-458a-9755-01f2673b610f: 'Partner Specialty List' # Partner Specialty List
+    061d5878-e055-46a9-b5ac-b0917f9d06a4: Partners # Partners
+    0066b7be-5f43-409c-b1d7-2f007ff99d77: 'Portland Phone' # Portland Phone
+    69cd6a55-88cb-4005-970f-751c1e61e3d0: Specialty # Specialty
+    069e8b13-99ec-469c-9a1c-65d64937aa61: Staff # Staff
+    73af2105-1d51-4e4e-96a1-9558e8db0e59: 'Specialty Name' # Specialty Name
+    82b51c53-273e-4e1c-88ba-a4ed4e4354f9: 'Staff Email' # Staff Email
+    89b830ac-916f-4e76-acf8-9edd682a9e42: Newsletters # Newsletters
+    200e5079-919e-490e-b482-9970a23bda96: 'Partner Fact' # Partner Fact
+    358d73b9-2024-4237-a556-ca1b8daf522b: acg4 # acg4
+    376b25cd-1938-49a2-a15e-d9d957437672: 'Partner Resume' # Partner Resume
+    418f3697-221d-44f7-86aa-e1aae1bdf009: 'Partner Quote' # Partner Quote
+    858afc3f-589f-4bc1-8392-46cf5a5a7fa8: 'Staff Description' # Staff Description
+    5462bd0e-b127-475f-8561-942ac2838f06: 'General Fax Number' # General Fax Number
+    9966d4c3-a3e7-4372-ab25-8600b447f1dc: 'Partner Phone' # Partner Phone
+    27177a83-fca0-4cb2-83aa-d763f792315b: 'Partner Welcome' # Partner Welcome
+    78456f04-9d37-4bd9-9ecc-00711c6ffd7f: 'Partner Licensed' # Partner Licensed
+    90641f7b-acb7-469e-801d-f07d2e6fe963: 'Staff Phone' # Staff Phone
+    628725c0-4b0e-4e0e-9832-8075bbbb283b: Partner # Partner
+    5032884a-b8bb-462b-83bf-9187eefd5989: Staff # Staff
+    5482307c-39c3-4b48-98f3-f6ebf3333102: Default # Default
+    a1a4f0c4-791c-4f1f-a382-c43f49d9a66b: Assets # Assets
+    a635c7ad-d264-4201-b831-e6ed0cb360ca: 'Partner Specialty' # Partner Specialty
+    ac45bdd7-6cd3-4b8d-9915-38c899a89d0f: 'Partner VCard' # Partner VCard
+    adb98c27-10eb-4394-88e5-abba27a99f47: 'Partner Image' # Partner Image
+    b7a7853c-3153-4b68-945e-70075c2d6b8a: 'Contact Information' # Contact Information
+    b44a80f1-64fb-4a4c-a6b7-782568e1cfb6: 'Partner Welcome' # Partner Welcome
+    b761f4f5-8b2e-49b4-a300-6cf554e2b8c9: Partners # Partners
+    bc555b8c-74a6-4a85-9765-22b3cccb907f: 'General Phone Number' # General Phone Number
+    bd405d98-83b5-4f88-8d16-420e1b2100ae: 'Partner Email' # Partner Email
+    c076d11d-e684-47f3-ba8a-392b06089feb: 'Contact Information' # Contact Information
+    c580f25e-3ae8-41bf-a436-07bd7a51cc66: 'Staff Position' # Staff Position
+    cd661d64-6688-4d0c-9a6c-374dc6eaf7f2: 'Partner Licensed' # Partner Licensed
+    cef4ba61-6ad0-4754-9316-7eb7b0872c7d: 'Portland Address' # Portland Address
+    da8c8762-f477-4284-b50f-c57192c7462f: Body # Body
+    e3dcb2ef-4c57-45dd-88bf-c58e1a1716f1: 'Vancouver Phone' # Vancouver Phone
+    ec184479-d003-4a71-b663-2225c5efce07: 'Staff Image' # Staff Image
+    ed37deb3-bb5a-484b-8ba0-1c3b2ef5700c: acg4 # acg4
+    eee713d3-b3ed-454c-a580-a6176331f333: Staff # Staff
+    f19aea11-9f6d-4fe5-b604-94a4b9652d5d: 'Service Image' # Service Image
+    f30defda-df53-4b02-8ac9-b5e25a0c7b8d: 'General Email Address' # General Email Address
+    f31feac0-b14a-4ec9-a0e4-ee6405efad6e: Images # Images
+    fde35769-e37b-4e8e-b50f-31b847418db0: 'Studies and Brochures' # Studies and Brochures
+plugins:
+  feed-me:
+    edition: standard
+    enabled: true
+    schemaVersion: 5.1.0.0
+  field-manager:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+system:
+  edition: solo
+  live: true
+  name: acg4
+  schemaVersion: 4.4.0.4
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
