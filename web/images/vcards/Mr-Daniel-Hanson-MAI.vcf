@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:2.1
+PRODID:-//Apple Inc.//Mac OS X 10.9.5//EN
+N:Hanson;Daniel;;Mr;MAI
+FN:Mr Daniel Hanson MAI
+ORG:Appraisal & Consulting Group LLC;
+TITLE:Partner
+EMAIL;INTERNET;WORK;pref:dan.hanson@acgvaluation.com
+TEL;WORK;VOICE;pref:503-539-0572
+ADR;WORK;pref:;;4535 SW 96th Ave;Beaverton;OR;97005;United States
+UID:46150708-61DE-4B38-BE75-6273A85CE7F9
+X-ABUID:A4A8802C-6E7B-46DB-97A8-E1C9C3C189E9:ABPerson
+END:VCARD

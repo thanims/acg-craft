@@ -1,8 +1,16 @@
-dateModified: 1682539863
+dateModified: 1682556500
 email:
   fromEmail: nimdaghlian@gmail.com
   fromName: acg4
-  transportType: craft\mail\transportadapters\Sendmail
+  replyToEmail: null
+  template: null
+  transportSettings:
+    host: $MAILHOG_SMTP_HOSTNAME
+    password: 'null'
+    port: $MAILHOG_SMTP_PORT
+    useAuthentication: '1'
+    username: 'null'
+  transportType: craft\mail\transportadapters\Smtp
 fs:
   assets:
     hasUrls: true
@@ -10,14 +18,14 @@ fs:
     settings:
       path: assets
     type: craft\fs\Local
-    url: assets
+    url: /assets
   images:
     hasUrls: true
     name: Images
     settings:
       path: images
     type: craft\fs\Local
-    url: images
+    url: /images
 meta:
   __names__:
     0af2f9e9-f74f-4d8c-abe4-d77cf94a5d6f: 'Staff Welcome' # Staff Welcome
@@ -48,6 +56,7 @@ meta:
     376b25cd-1938-49a2-a15e-d9d957437672: 'Partner Resume' # Partner Resume
     418f3697-221d-44f7-86aa-e1aae1bdf009: 'Partner Quote' # Partner Quote
     858afc3f-589f-4bc1-8392-46cf5a5a7fa8: 'Staff Description' # Staff Description
+    5209e339-1946-48e7-977e-cb5081e66518: 'Member Status' # Member Status
     5462bd0e-b127-475f-8561-942ac2838f06: 'General Fax Number' # General Fax Number
     9966d4c3-a3e7-4372-ab25-8600b447f1dc: 'Partner Phone' # Partner Phone
     27177a83-fca0-4cb2-83aa-d763f792315b: 'Partner Welcome' # Partner Welcome
@@ -72,13 +81,24 @@ meta:
     da8c8762-f477-4284-b50f-c57192c7462f: Body # Body
     e3dcb2ef-4c57-45dd-88bf-c58e1a1716f1: 'Vancouver Phone' # Vancouver Phone
     ec184479-d003-4a71-b663-2225c5efce07: 'Staff Image' # Staff Image
-    ed37deb3-bb5a-484b-8ba0-1c3b2ef5700c: acg4 # acg4
+    ed37deb3-bb5a-484b-8ba0-1c3b2ef5700c: 'Appraisal & Consulting Group LLC' # Appraisal & Consulting Group LLC
     eee713d3-b3ed-454c-a580-a6176331f333: Staff # Staff
     f19aea11-9f6d-4fe5-b604-94a4b9652d5d: 'Service Image' # Service Image
     f30defda-df53-4b02-8ac9-b5e25a0c7b8d: 'General Email Address' # General Email Address
     f31feac0-b14a-4ec9-a0e4-ee6405efad6e: Images # Images
     fde35769-e37b-4e8e-b50f-31b847418db0: 'Studies and Brochures' # Studies and Brochures
 plugins:
+  contact-form:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      allowAttachments: ''
+      allowedMessageFields: null
+      prependSender: 'On behalf of'
+      prependSubject: 'New Contact form message'
+      successFlashMessage: 'Your message has been sent.'
+      toEmail: nimwunnan@gmail.com
   feed-me:
     edition: standard
     enabled: true
@@ -94,7 +114,8 @@ plugins:
 system:
   edition: solo
   live: true
-  name: acg4
+  name: 'Appraisal & Consulting Group LLC'
+  retryDuration: null
   schemaVersion: 4.4.0.4
   timeZone: America/Los_Angeles
 users:

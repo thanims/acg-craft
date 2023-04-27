@@ -4,10 +4,10 @@ handle: partners
 name: Partners
 propagationMethod: all
 siteSettings:
-  ed37deb3-bb5a-484b-8ba0-1c3b2ef5700c: # acg4
+  ed37deb3-bb5a-484b-8ba0-1c3b2ef5700c: # Appraisal & Consulting Group LLC
     enabledByDefault: true
     hasUrls: true
-    template: partners/_entry
+    template: partner-detail/_entry.html
     uriFormat: 'partner-detail/{slug}'
 structure:
   maxLevels: null

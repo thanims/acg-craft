@@ -13,7 +13,7 @@ settings:
     - image
   branchLimit: null
   defaultUploadLocationSource: 'volume:f31feac0-b14a-4ec9-a0e4-ee6405efad6e' # Images
-  defaultUploadLocationSubpath: '{slug}'
+  defaultUploadLocationSubpath: partners/staff
   localizeRelations: false
   maintainHierarchy: false
   maxRelations: 1

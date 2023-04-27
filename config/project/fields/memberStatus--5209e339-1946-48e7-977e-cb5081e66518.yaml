@@ -1,0 +1,34 @@
+columnSuffix: skcdfdgi
+contentColumnType: string
+fieldGroup: 628725c0-4b0e-4e0e-9832-8075bbbb283b # Partner
+handle: memberStatus
+instructions: null
+name: 'Member Status'
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Current Member'
+        -
+          - value
+          - currentMember
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'Member Emeritus'
+        -
+          - value
+          - memberEmeritus
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\RadioButtons

@@ -46,7 +46,7 @@ fieldLayouts:
         uid: 5f09873c-1f6c-4c2f-b05f-22bb9c2f24aa
         userCondition: null
 handle: partnerWelcome
-hasTitleField: false
+hasTitleField: true
 name: 'Partner Welcome'
 section: b44a80f1-64fb-4a4c-a6b7-782568e1cfb6 # Partner Welcome
 sortOrder: 1

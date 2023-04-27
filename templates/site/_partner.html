@@ -1,0 +1,25 @@
+<div class="partner-entry">
+    <a href="{{partner.url()}}">
+
+      <div class="partner-image">
+        <img src="{{partner.partnerImage.one().getUrl(partnerImageCrop)}}" title="{{partner.title}}" alt="{{partner.title}}">
+      </div>
+      <div class="partner-name">
+        {{partner.title}}
+      </div>
+
+      <div class="partner-contact">
+        <a href="mailto:{{partner.partnerphone}}">{{partner.partnerphone}}</a>
+      </div>
+      <div class="partner-contact">
+        {% set name = partner.title | split(' ') %}
+        <a href="mailto:{{partner.partneremail}}">Email {{name[0]}}</a>
+      </div>
+
+      <div class="partner-specialties">
+        {% for block in partner.partnerSpecialtyList.all() %}
+          <span>{{block.specialtyName}}</span>{% if not loop.last %}, {% endif %}
+        {% endfor %}
+      </div>
+    </a>
+  </div>

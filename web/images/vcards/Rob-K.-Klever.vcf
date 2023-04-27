@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//Mac OS X 10.10.3//EN
+N:K. Klever;Rob;;;
+FN:Rob K. Klever
+ORG:Appraisal and Consulting Group LLC;
+EMAIL;type=INTERNET;type=WORK;type=pref:Rob.Klever@acgvaluation.com
+TEL;type=IPHONE;type=CELL;type=VOICE;type=pref:5035025454
+ADR;type=HOME;type=pref:;;14378 SE Willet Drive;Happy Valley;OR;97086;
+item1.URL;type=pref:www.acgvaluation.com
+item1.X-ABLabel:_$!<HomePage>!$_
+CATEGORIES:ACGRP Appraisers
+UID:93EAE3A3-1230-420E-8A9F-B4FD9F24D320
+X-ABUID:FE19AEC6-AD5A-4DDB-B68E-243862DC5FE0:ABPerson
+END:VCARD

@@ -1,4 +1,4 @@
-{% set req = "first request segment"  %}
+{% set req = craft.app.request.getSegment(1)  %}
 <li {% if req == "" %} class="active"{% endif %}><a href="{{ siteUrl }}">Home</a></li>
 <li {% if req == "services" %} class="active"{% endif %}><a href="/services">Services</a></li>
 <li {% if req == "ordering" %} class="active"{% endif %}><a href="/ordering">Ordering</a></li>

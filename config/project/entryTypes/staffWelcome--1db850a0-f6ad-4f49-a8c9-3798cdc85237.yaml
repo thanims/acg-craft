@@ -46,7 +46,7 @@ fieldLayouts:
         uid: a5e66031-6348-47cf-98e8-5af6aa573561
         userCondition: null
 handle: staffWelcome
-hasTitleField: false
+hasTitleField: true
 name: 'Staff Welcome'
 section: 0af2f9e9-f74f-4d8c-abe4-d77cf94a5d6f # Staff Welcome
 sortOrder: 1

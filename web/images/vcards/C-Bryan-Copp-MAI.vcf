@@ -1,0 +1,17 @@
+BEGIN:VCARD
+VERSION:2.1
+X-MS-SIGNATURE:YES
+N;LANGUAGE=en-us:C. Bryan Copp;MAI
+FN:C. Bryan Copp, MAI
+ORG:Appraisal & Consulting Group LLC
+TITLE:Commercial Appraiser / Partner
+TEL;WORK;VOICE:(971) 279-2729
+ADR;WORK;PREF:;;1516 NE 37th Ave, Suite 210;Portland;OR;97232;United States of America
+LABEL;WORK;PREF;ENCODING=QUOTED-PRINTABLE:1516 NE 37th Ave, Suite 210=0D=0A=
+Portland, OR 97232
+X-MS-OL-DEFAULT-POSTAL-ADDRESS:2
+URL;WORK:www.acgvaluation.com
+EMAIL;PREF;INTERNET:bryan.copp@acgvaluation.com
+X-MS-OL-DESIGN;CHARSET=utf-8:<card xmlns="http://schemas.microsoft.com/office/outlook/12/electronicbusinesscards" ver="1.0" layout="left" bgcolor="ffffff"><img xmlns="" align="fit" area="16" use="cardpicture"/><fld xmlns="" prop="name" align="left" dir="ltr" style="b" color="000000" size="10"/><fld xmlns="" prop="org" align="left" dir="ltr" color="000000" size="8"/><fld xmlns="" prop="title" align="left" dir="ltr" color="000000" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="telwork" align="left" dir="ltr" color="000000" size="8"><label align="right" color="626262">Work</label></fld><fld xmlns="" prop="email" align="left" dir="ltr" color="000000" size="8"/><fld xmlns="" prop="addrwork" align="left" dir="ltr" color="000000" size="8"/><fld xmlns="" prop="webwork" align="left" dir="ltr" color="000000" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/></card>
+REV:20141106T225530Z
+END:VCARD

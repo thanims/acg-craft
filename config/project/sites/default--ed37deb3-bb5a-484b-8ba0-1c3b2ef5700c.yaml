@@ -1,8 +1,9 @@
 baseUrl: $PRIMARY_SITE_URL
+enabled: true
 handle: default
 hasUrls: true
 language: en-US
-name: acg4
+name: 'Appraisal & Consulting Group LLC'
 primary: true
 siteGroup: 358d73b9-2024-4237-a556-ca1b8daf522b # acg4
 sortOrder: 1

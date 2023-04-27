@@ -22,12 +22,15 @@
   </div>
 
   <div class="partner-listing">
+
     {% set partnerImage = {
       width: 140,
       height: 200,
-      crop: 'center-center',
+      mode: 'crop',
+      position: 'center-center',
       quality: 80,
     } %}
+
     {% set staffMembers = craft.entries.section('staff') %}
     {% for staff in staffMembers %}
     <div class="partner-entry">
@@ -49,7 +52,7 @@
           <a href="mailto:{{staff.staffEmail}}">Email {{name[0]}}</a>
         </div>
       {% endif %}
-      {% if staff.staffVcard is defined %}
+      {% if staff.staffVcard.one() is not null %}
         <div class="partner-contact">
           <a href="{{staff.staffVcard.one().getUrl()}}">Download VCard</a>
         </div>

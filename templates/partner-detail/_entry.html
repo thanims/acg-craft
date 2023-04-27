@@ -1,7 +1,7 @@
 {% extends "_layout" %}
 
 {% block content %}
-{% set interior = craft.entries.section('partners').slug(craft.app.request.lastSegment) %}
+{% set interior = craft.entries.section('partners').slug(craft.app.request.segment(-1)) %}
 
   <div class="standard-page">
 
@@ -20,15 +20,19 @@
 
   {% for partner in interior %}
   <div class="partner-detail">
-    {% set partnerImage = {
+
+    {% set partnerImageCrop = {
       width: 800,
       height: 1140,
-      crop: 'center-center',
+      mode: 'crop',
+      position: 'center-center',
       quality: 80,
     } %}
+
+
     <div class="partner-right">
       <div class="partner-image">
-        <img src="{{partner.partnerImage.one().getUrl(partnerImage)}}" title="{{partner.title}}" alt="{{partner.title}}">
+        <img src="{{partner.partnerImage.one().getUrl(partnerImageCrop)}}" title="{{partner.title}}" alt="{{partner.title}}">
       </div>
       <div class="partner-contact">
         <span>Telephone</span>
@@ -38,13 +42,13 @@
         <span>Email</span>
         <a href="mailto:{{partner.partneremail}}">{{partner.partneremail}}</a>
       </div>
-      {% if partner.partnerResume is defined %}
+      {% if partner.partnerResume.one() is not null %}
       <div class="partner-contact">
         <span>Resume</span>
         <a target="_blank" href="{{partner.partnerResume.one().getUrl()}}">View Resume</a>
       </div>
       {% endif %}
-      {% if partner.partnerVcard is defined %}
+      {% if partner.partnerVcard.one() is not null %}
       <div class="partner-contact">
         <span>VCard</span>
         <a href="{{partner.partnerVcard.one().getUrl()}}">Download VCard</a>
@@ -53,7 +57,7 @@
       <div class="partner-contact">
         <span>States Licensed</span>
         {% for tag in partner.partnerLicensed %}
-          {{tag.title}}{% if not loop.last %},{% endif %}
+          {{tag.title}} {% if loop.index != partner.partnerLicensed|length %},{% endif %}
         {% endfor %}
       </div>
     </div>

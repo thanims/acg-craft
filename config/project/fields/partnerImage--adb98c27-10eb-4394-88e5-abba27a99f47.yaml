@@ -7,12 +7,12 @@ name: 'Partner Image'
 searchable: true
 settings:
   allowSelfRelations: false
-  allowSubfolders: false
+  allowSubfolders: true
   allowUploads: true
   allowedKinds:
     - image
   branchLimit: null
-  defaultUploadLocationSource: '1'
+  defaultUploadLocationSource: 'volume:f31feac0-b14a-4ec9-a0e4-ee6405efad6e' # Images
   defaultUploadLocationSubpath: null
   localizeRelations: false
   maintainHierarchy: false
@@ -22,17 +22,27 @@ settings:
   restrictFiles: true
   restrictLocation: true
   restrictedDefaultUploadSubpath: null
-  restrictedLocationSource: '1'
-  restrictedLocationSubpath: null
+  restrictedLocationSource: 'volume:f31feac0-b14a-4ec9-a0e4-ee6405efad6e' # Images
+  restrictedLocationSubpath: partners
+  selectionCondition:
+    __assoc__:
+      -
+        - elementType
+        - craft\elements\Asset
+      -
+        - fieldContext
+        - global
+      -
+        - class
+        - craft\elements\conditions\assets\AssetCondition
   selectionLabel: null
-  showSiteMenu: false
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  sources:
-    - 'folder:1'
+  sources: '*'
   targetSiteId: null
   validateRelatedElements: false
-  viewMode: null
+  viewMode: list
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Assets
