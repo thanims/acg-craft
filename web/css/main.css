@@ -1135,3 +1135,16 @@ footer ul li:first-child {
 #staff, #staff #faux-container {
   background-image: url("../images/backgrounds/bg_5.jpg");
 }
+
+/* non-SASS hacks below */
+
+.jotform-form {
+  max-width:100000px!important;
+}
+.jotform-form ul.form-section {
+  padding:0 38px!important; 
+  list-style: none!important;
+}
+.jotform-form ul.form-section li {
+  list-style: none!important;
+}

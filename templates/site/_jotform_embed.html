@@ -1,0 +1,167 @@
+<script src="https://cdn01.jotfor.ms/static/prototype.forms.js?3.3.41342" type="text/javascript"></script>
+<script src="https://cdn02.jotfor.ms/static/jotform.forms.js?3.3.41342" type="text/javascript"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.js"></script>
+<script src="https://cdn03.jotfor.ms/js/vendor/jquery-1.8.0.min.js?v=3.3.41342" type="text/javascript"></script>
+<script defer src="https://cdn01.jotfor.ms/js/vendor/maskedinput.min.js?v=3.3.41342" type="text/javascript"></script>
+<script defer src="https://cdn02.jotfor.ms/js/vendor/jquery.maskedinput.min.js?v=3.3.41342" type="text/javascript"></script>
+<script type="text/javascript">	JotForm.newDefaultTheme = true;
+	JotForm.extendsNewTheme = false;
+	JotForm.singleProduct = false;
+	JotForm.newPaymentUIForNewCreatedForms = false;
+	JotForm.newPaymentUI = true;
+	JotForm.submitError="jumpToFirstError";
+
+	JotForm.init(function(){
+	/*INIT-START*/
+      setTimeout(function() {
+          $('input_11').hint('ex: myname@example.com');
+       }, 20);
+if (window.JotForm && JotForm.accessible) $('input_6').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_19').setAttribute('tabindex',0);
+
+ JotForm.calendarMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+ JotForm.calendarDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+ JotForm.calendarOther = {"today":"Today"};
+ var languageOptions = document.querySelectorAll('#langList li'); 
+ for(var langIndex = 0; langIndex < languageOptions.length; langIndex++) { 
+   languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("20", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""}); }, 0); });
+ } 
+ JotForm.onTranslationsFetch(function() { JotForm.setCalendar("20", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""}); });
+if (window.JotForm && JotForm.accessible) $('input_23').setAttribute('tabindex',0);
+	/*INIT-END*/
+	});
+
+   JotForm.prepareCalculationsOnTheFly([null,null,null,null,null,null,{"name":"requestingInformation","qid":"6","text":"Requesting Information Regarding","type":"control_textarea"},{"name":"7","qid":"7","text":"Submit Form","type":"control_button"},null,null,{"name":"name","qid":"10","text":"Name","type":"control_fullname"},{"name":"email11","qid":"11","subLabel":"example@example.com","text":"E-mail","type":"control_email"},{"name":"phoneNumber12","qid":"12","text":"Phone Number","type":"control_phone"},{"name":"clickTo","qid":"13","text":"Information Request","type":"control_head"},{"description":"","name":"typeA","qid":"14","subLabel":"","text":"Property Type","type":"control_dropdown"},{"description":"","name":"propertyType","qid":"15","subLabel":"","text":"Property Use","type":"control_dropdown"},{"description":"","name":"propertyUse","qid":"16","subLabel":"","text":"Purpose of Appraisal","type":"control_dropdown"},{"description":"","name":"propertyAddress","qid":"17","text":"Property Address","type":"control_address"},null,{"description":"","name":"intendedUser","qid":"19","subLabel":"","text":"Intended User","type":"control_textbox"},{"description":"","name":"resultsNeeded","qid":"20","text":"Results Needed By","type":"control_datetime"},null,null,{"description":"","name":"additionalInformation","qid":"23","subLabel":"","text":"Additional Information","type":"control_textarea"}]);
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,{"name":"requestingInformation","qid":"6","text":"Requesting Information Regarding","type":"control_textarea"},{"name":"7","qid":"7","text":"Submit Form","type":"control_button"},null,null,{"name":"name","qid":"10","text":"Name","type":"control_fullname"},{"name":"email11","qid":"11","subLabel":"example@example.com","text":"E-mail","type":"control_email"},{"name":"phoneNumber12","qid":"12","text":"Phone Number","type":"control_phone"},{"name":"clickTo","qid":"13","text":"Information Request","type":"control_head"},{"description":"","name":"typeA","qid":"14","subLabel":"","text":"Property Type","type":"control_dropdown"},{"description":"","name":"propertyType","qid":"15","subLabel":"","text":"Property Use","type":"control_dropdown"},{"description":"","name":"propertyUse","qid":"16","subLabel":"","text":"Purpose of Appraisal","type":"control_dropdown"},{"description":"","name":"propertyAddress","qid":"17","text":"Property Address","type":"control_address"},null,{"description":"","name":"intendedUser","qid":"19","subLabel":"","text":"Intended User","type":"control_textbox"},{"description":"","name":"resultsNeeded","qid":"20","text":"Results Needed By","type":"control_datetime"},null,null,{"description":"","name":"additionalInformation","qid":"23","subLabel":"","text":"Additional Information","type":"control_textarea"}]);}, 20); 
+</script>
+<style type="text/css">@media print{.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.41342&themeRevisionID=5f30e2a790832f3e96009402"/>
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/payment/payment_styles.css?3.3.41342" />
+<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/css/styles/payment/payment_feature.css?3.3.41342" />
+<style type="text/css" id="form-designer-style">
+    /* Injected CSS Code */
+.form-label.form-label-auto {
+        
+        display: inline-block;
+        float: left;
+        text-align: left;
+      
+      }
+    /* Injected CSS Code */
+</style>
+
+<form class="jotform-form" action="https://submit.jotform.com/submit/231166716669162" method="post" name="form_231166716669162" id="231166716669162" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="231166716669162" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" />
+  <div role="main" class="form-all">
+    <ul class="form-section page-section">
+      <li id="cid_13" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-large">
+          <div class="header-text httal htvam">
+            <h1 id="header_13" class="form-header" data-component="header">Information Request</h1>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_fullname" id="id_10"><label class="form-label form-label-left form-label-auto" id="label_10" for="first_10"> Name </label>
+        <div id="cid_10" class="form-input" data-layout="full">
+          <div data-wrapper-react="true"><span class="form-sub-label-container" style="vertical-align:top" data-input-type="first"><input type="text" id="first_10" name="q10_name[first]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_10 given-name" size="10" value="" data-component="first" aria-labelledby="label_10 sublabel_10_first" /><label class="form-sub-label" for="first_10" id="sublabel_10_first" style="min-height:13px" aria-hidden="false">First Name</label></span><span class="form-sub-label-container" style="vertical-align:top" data-input-type="last"><input type="text" id="last_10" name="q10_name[last]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_10 family-name" size="15" value="" data-component="last" aria-labelledby="label_10 sublabel_10_last" /><label class="form-sub-label" for="last_10" id="sublabel_10_last" style="min-height:13px" aria-hidden="false">Last Name</label></span></div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_phone" id="id_12"><label class="form-label form-label-left form-label-auto" id="label_12" for="input_12_area"> Phone Number </label>
+        <div id="cid_12" class="form-input" data-layout="half">
+          <div data-wrapper-react="true"><span class="form-sub-label-container" style="vertical-align:top" data-input-type="areaCode"><input type="tel" id="input_12_area" name="q12_phoneNumber12[area]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_12 tel-area-code" value="" data-component="areaCode" aria-labelledby="label_12 sublabel_12_area" /><span class="phone-separate" aria-hidden="true"> -</span><label class="form-sub-label" for="input_12_area" id="sublabel_12_area" style="min-height:13px" aria-hidden="false">Area Code</label></span><span class="form-sub-label-container" style="vertical-align:top" data-input-type="phone"><input type="tel" id="input_12_phone" name="q12_phoneNumber12[phone]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_12 tel-local" value="" data-component="phone" aria-labelledby="label_12 sublabel_12_phone" /><label class="form-sub-label" for="input_12_phone" id="sublabel_12_phone" style="min-height:13px" aria-hidden="false">Phone Number</label></span></div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_email" id="id_11"><label class="form-label form-label-left form-label-auto" id="label_11" for="input_11"> E-mail </label>
+        <div id="cid_11" class="form-input" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="email" id="input_11" name="q11_email11" class="form-textbox validate[Email]" data-defaultvalue="" style="width:310px" size="310" value="" placeholder="ex: myname@example.com" data-component="email" aria-labelledby="label_11 sublabel_input_11" /><label class="form-sub-label" for="input_11" id="sublabel_input_11" style="min-height:13px" aria-hidden="false">example@example.com</label></span> </div>
+      </li>
+      <li class="form-line" data-type="control_address" id="id_17" data-compound-hint=",,,,Please Select,,Please Select,"><label class="form-label form-label-left form-label-auto" id="label_17" for="input_17_addr_line1"> Property Address </label>
+        <div id="cid_17" class="form-input" data-layout="full">
+          <div summary="" class="form-address-table jsTest-addressField">
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField"><span class="form-address-line form-address-street-line jsTest-address-lineField"><span class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_17_addr_line1" name="q17_propertyAddress[addr_line1]" class="form-textbox form-address-line" data-defaultvalue="" autoComplete="section-input_17 address-line1" value="" data-component="address_line_1" aria-labelledby="label_17 sublabel_17_addr_line1" required="" /><label class="form-sub-label" for="input_17_addr_line1" id="sublabel_17_addr_line1" style="min-height:13px" aria-hidden="false">Street Address</label></span></span></div>
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField"><span class="form-address-line form-address-street-line jsTest-address-lineField"><span class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_17_addr_line2" name="q17_propertyAddress[addr_line2]" class="form-textbox form-address-line" data-defaultvalue="" autoComplete="section-input_17 address-line2" value="" data-component="address_line_2" aria-labelledby="label_17 sublabel_17_addr_line2" /><label class="form-sub-label" for="input_17_addr_line2" id="sublabel_17_addr_line2" style="min-height:13px" aria-hidden="false">Street Address Line 2</label></span></span></div>
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField"><span class="form-address-line form-address-city-line jsTest-address-lineField "><span class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_17_city" name="q17_propertyAddress[city]" class="form-textbox form-address-city" data-defaultvalue="" autoComplete="section-input_17 address-level2" value="" data-component="city" aria-labelledby="label_17 sublabel_17_city" required="" /><label class="form-sub-label" for="input_17_city" id="sublabel_17_city" style="min-height:13px" aria-hidden="false">City</label></span></span><span class="form-address-line form-address-state-line jsTest-address-lineField "><span class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_17_state" name="q17_propertyAddress[state]" class="form-textbox form-address-state" data-defaultvalue="" autoComplete="section-input_17 address-level1" value="" data-component="state" aria-labelledby="label_17 sublabel_17_state" required="" /><label class="form-sub-label" for="input_17_state" id="sublabel_17_state" style="min-height:13px" aria-hidden="false">State / Province</label></span></span></div>
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField"><span class="form-address-line form-address-zip-line jsTest-address-lineField "><span class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_17_postal" name="q17_propertyAddress[postal]" class="form-textbox form-address-postal" data-defaultvalue="" autoComplete="section-input_17 postal-code" value="" data-component="zip" aria-labelledby="label_17 sublabel_17_postal" required="" /><label class="form-sub-label" for="input_17_postal" id="sublabel_17_postal" style="min-height:13px" aria-hidden="false">Postal / Zip Code</label></span></span></div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_dropdown" id="id_14"><label class="form-label form-label-left form-label-auto" id="label_14" for="input_14"> Property Type </label>
+        <div id="cid_14" class="form-input" data-layout="half"> <select class="form-dropdown" id="input_14" name="q14_typeA" style="width:310px" data-component="dropdown" aria-label="Property Type">
+            <option value="">Please Select</option>
+            <option value="Agriculture">Agriculture</option>
+            <option value="Healthcare">Healthcare</option>
+            <option value="Hospitality">Hospitality</option>
+            <option value="Industrial">Industrial</option>
+            <option value="Land">Land</option>
+            <option value="Manufacture Housing">Manufacture Housing</option>
+            <option value="Multi-Family">Multi-Family</option>
+            <option value="Office">Office</option>
+            <option value="Retail">Retail</option>
+            <option value="Self-Storage">Self-Storage</option>
+            <option value="Single-Family">Single-Family</option>
+            <option value="Special Purpose">Special Purpose</option>
+          </select> </div>
+      </li>
+      <li class="form-line" data-type="control_dropdown" id="id_15"><label class="form-label form-label-left form-label-auto" id="label_15" for="input_15"> Property Use </label>
+        <div id="cid_15" class="form-input" data-layout="half"> <select class="form-dropdown" id="input_15" name="q15_propertyType" style="width:310px" data-component="dropdown" aria-label="Property Use">
+            <option value="">Please Select</option>
+            <option value="Owner-Occupied">Owner-Occupied</option>
+            <option value="Tenant(s)">Tenant(s)</option>
+          </select> </div>
+      </li>
+      <li class="form-line" data-type="control_dropdown" id="id_16"><label class="form-label form-label-left form-label-auto" id="label_16" for="input_16"> Purpose of Appraisal </label>
+        <div id="cid_16" class="form-input" data-layout="half"> <select class="form-dropdown" id="input_16" name="q16_propertyUse" style="width:310px" data-component="dropdown" aria-label="Purpose of Appraisal">
+            <option value="">Please Select</option>
+            <option value="Estate Planning">Estate Planning</option>
+            <option value="Rent Survey">Rent Survey</option>
+            <option value="Potential Sale Price">Potential Sale Price</option>
+            <option value="Sale Negotiation">Sale Negotiation</option>
+            <option value="Divorce">Divorce</option>
+            <option value="Condemnation">Condemnation</option>
+            <option value="Litigation">Litigation</option>
+            <option value="Feasibility Analysis">Feasibility Analysis</option>
+          </select> </div>
+      </li>
+      <li class="form-line" data-type="control_textarea" id="id_6"><label class="form-label form-label-left form-label-auto" id="label_6" for="input_6"> Requesting Information Regarding </label>
+        <div id="cid_6" class="form-input" data-layout="full"> <textarea id="input_6" class="form-textarea" name="q6_requestingInformation" style="width:648px;height:163px" data-component="textarea" aria-labelledby="label_6"></textarea> </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_19"><label class="form-label form-label-left form-label-auto" id="label_19" for="input_19"> Intended User </label>
+        <div id="cid_19" class="form-input" data-layout="half"> <input type="text" id="input_19" name="q19_intendedUser" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" value="" data-component="textbox" aria-labelledby="label_19" /> </div>
+      </li>
+      <li class="form-line" data-type="control_datetime" id="id_20"><label class="form-label form-label-left form-label-auto" id="label_20" for="lite_mode_20"> Results Needed By </label>
+        <div id="cid_20" class="form-input" data-layout="half">
+          <div data-wrapper-react="true">
+            <div style="display:none"><span class="form-sub-label-container" style="vertical-align:top"><input type="tel" class="form-textbox validate[limitDate]" id="month_20" name="q20_resultsNeeded[month]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" autoComplete="off" aria-labelledby="label_20 sublabel_20_month" /><span class="date-separate" aria-hidden="true"> -</span><label class="form-sub-label" for="month_20" id="sublabel_20_month" style="min-height:13px" aria-hidden="false">Month</label></span><span class="form-sub-label-container" style="vertical-align:top"><input type="tel" class="form-textbox validate[limitDate]" id="day_20" name="q20_resultsNeeded[day]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" autoComplete="off" aria-labelledby="label_20 sublabel_20_day" /><span class="date-separate" aria-hidden="true"> -</span><label class="form-sub-label" for="day_20" id="sublabel_20_day" style="min-height:13px" aria-hidden="false">Day</label></span><span class="form-sub-label-container" style="vertical-align:top"><input type="tel" class="form-textbox validate[limitDate]" id="year_20" name="q20_resultsNeeded[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="" autoComplete="off" aria-labelledby="label_20 sublabel_20_year" /><label class="form-sub-label" for="year_20" id="sublabel_20_year" style="min-height:13px" aria-hidden="false">Year</label></span></div><span class="form-sub-label-container" style="vertical-align:top"><input type="text" class="form-textbox validate[limitDate, validateLiteDate]" id="lite_mode_20" size="12" data-maxlength="12" maxLength="12" data-age="" value="" data-format="mmddyyyy" data-seperator="-" placeholder="MM-DD-YYYY" autoComplete="off" aria-labelledby="label_20 sublabel_20_litemode" /><img class=" newDefaultTheme-dateIcon icon-liteMode" alt="Pick a Date" id="input_20_pick" src="https://cdn.jotfor.ms/images/calendar.png" data-component="datetime" aria-hidden="true" data-allow-time="No" data-version="v2" /><label class="form-sub-label" for="lite_mode_20" id="sublabel_20_litemode" style="min-height:13px" aria-hidden="false">Date</label></span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textarea" id="id_23"><label class="form-label form-label-left form-label-auto" id="label_23" for="input_23"> Additional Information </label>
+        <div id="cid_23" class="form-input" data-layout="full"> <textarea id="input_23" class="form-textarea" name="q23_additionalInformation" style="width:648px;height:163px" data-component="textarea" aria-labelledby="label_23"></textarea> </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_7">
+        <div id="cid_7" class="form-input-wide" data-layout="full">
+          <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField"><button id="input_7" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">Submit Form</button></div>
+        </div>
+      </li>
+      <li style="display:none">Should be Empty: <input type="text" name="website" value="" /></li>
+    </ul>
+  </div>
+  <script>
+    JotForm.showJotFormPowered = "new_footer";
+  </script>
+  <script>
+    JotForm.poweredByText = "Powered by Jotform";
+  </script><input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="231166716669162" />
+  <script type="text/javascript">
+    var all_spc = document.querySelectorAll("form[id='231166716669162'] .si" + "mple" + "_spc");
+    for (var i = 0; i < all_spc.length; i++)
+    {
+      all_spc[i].value = "231166716669162-231166716669162";
+    }
+  </script>
+  <div class="formFooter-heightMask"></div>
+  <div class="formFooter f6 branding21">
+    <div class="formFooter-wrapper formFooter-leftSide"><a href="https://www.jotform.com/?utm_source=formfooter&utm_medium=banner&utm_term=231166716669162&utm_content=jotform_logo&utm_campaign=powered_by_jotform_le" target="_blank" class="formFooter-logoLink"><img class="formFooter-logo" src="https://cdn.jotfor.ms/assets/img/logo2021/jotform-logo-white.svg" alt="Jotform Logo" style="height: 44px;"></a></div>
+    <div class="formFooter-wrapper formFooter-rightSide"><span class="formFooter-text">Now create your own Jotform - It's free!</span><a class="formFooter-button" href="https://www.jotform.com/?utm_source=formfooter&utm_medium=banner&utm_term=231166716669162&utm_content=jotform_button&utm_campaign=powered_by_jotform_le" target="_blank">Create your own Jotform</a></div>
+  </div>
+</form><script type="text/javascript">JotForm.ownerView=true;</script><script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.41342"></script>
+<script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.41342"></script>
